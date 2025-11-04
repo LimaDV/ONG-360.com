@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Sin Límites 360</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+    
+            body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #041833; /* azul oscuro profundo */
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    /* ======== PORTADA PRINCIPAL ======== */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #041833;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    .hero img {
+      width: 20vw;
+      max-width: 180px;
+      min-width: 100px;
+      height: auto;
+      animation: fadeInUp 2s ease forwards;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: white;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeInUp 2s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ======== FLECHA ANIMADA ======== */
+    .arrow {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2.5rem;
+      color: white;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {transform: translate(-50%, 0);}
+      40% {transform: translate(-50%, -10px);}
+      60% {transform: translate(-50%, -5px);}
+    }
+
+    /* ======== SECCIONES SIGUIENTES ======== */
+    .propuestas {
+      background-color: #062147;
+    }
+
+    .nosotros, .actividades, .contacto, .soporte {
+      background-color: #041833;
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #ddd;
+    }
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: #102b57;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            z-index: 1000;
+        }
+        header h1 {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+        }
+        header img {
+            height: 40px;
+            margin-left: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+        section {
+            padding: 100px 40px;
+            min-height: 100vh;
+        }
+        .alianzas, .propuestas, .nosotros, .actividades, .contacto, .soporte {
+            background-color: #0b1d3a;
+            border-bottom: 2px solid #102b57;
+        }
+        .propuestas img, .nosotros img, .actividades img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto;
+        }
+        .propuestas div, .actividades div {
+            background-color: #142f5f;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #000;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+        }
+        form input, form textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            color: #000;
+        }
+        form label {
+            color: white;
+        }
+        footer {
+            background-color: #102b57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #00bcd4;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ONG Sin Límites 360 <img src="logo.png.png" alt="Logo ONG"></h1>
+        <nav>
+            <a href="#propuestas">Propuestas</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#actividades">Actividades</a>
+            <a href="#contacto">Contáctanos</a>
+            <a href="#soporte">Soporte</a>
+        </nav>
+    </header>
+
+    <section id="propuestas" class="propuestas">
+        <h2>Propuestas</h2>
+        <div>
+            <h3>Propuesta 1: Educación para Todos</h3>
+            <img src="https://picsum.photos/400/200?education" alt="Educación">
+            <p>Buscamos brindar acceso gratuito a recursos educativos digitales para niños en comunidades vulnerables.</p>
+        </div>
+        <div>
+            <h3>Propuesta 2: Mujeres Emprendedoras</h3>
+            <img src="https://picsum.photos/400/200?business" alt="Emprendimiento">
+            <p>Capacitaciones para mujeres en San Juan de Lurigancho en temas de finanzas, marketing y liderazgo.</p>
+        </div>
+        <div>
+            <h3>Propuesta 3: Salud Comunitaria</h3>
+            <img src="https://picsum.photos/400/200?health" alt="Salud">
+            <p>Promovemos jornadas médicas y charlas preventivas en zonas de escasos recursos.</p>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <h2>Nosotros</h2>
+        <p>Fundada en Lima, Perú en 2005, nuestra ONG trabaja para mejorar la calidad de vida de personas en situación de vulnerabilidad, con enfoque en el distrito de San Juan de Lurigancho.</p>
+        <h3>Misión</h3>
+        <p>Brindar apoyo integral a comunidades en desarrollo a través de proyectos sociales sostenibles.</p>
+        <h3>Visión</h3>
+        <p>Ser líderes en la inclusión social en el Perú, promoviendo oportunidades equitativas para todos.</p>
+        <img src="https://picsum.photos/400/200?team" alt="Equipo">
+    </section>
+
+    <section id="actividades" class="actividades">
+        <h2>Actividades</h2>
+        <div>
+            <h3>Taller de Emprendimiento</h3>
+            <img src="https://picsum.photos/400/200?entrepreneurship" alt="Emprendimiento">
+            <p>Impulsamos ideas de negocio sostenibles en comunidades jóvenes.</p>
+        </div>
+        <div>
+            <h3>Taller de Salud</h3>
+            <img src="https://picsum.photos/400/200?clinic" alt="Salud">
+            <p>Jornadas de vacunación y chequeos médicos gratuitos.</p>
+        </div>
+        <div>
+            <h3>Taller de Capacitación Docente</h3>
+            <img src="https://picsum.photos/400/200?teacher" alt="Docente">
+            <p>Formamos a docentes para mejorar la calidad educativa.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="Tu correo">
+            <label for="disponibilidad">Disponibilidad:</label>
+            <input type="text" id="disponibilidad" name="disponibilidad" placeholder="Ej. fines de semana">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos más..."></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="soporte" class="soporte">
+        <h2>Soporte</h2>
+        <p>Si necesitas ayuda con nuestros servicios o tienes algún inconveniente, contáctanos a través del formulario anterior o por nuestras redes sociales.</p>
+    </section>
+
+    <footer>
+        <p>📍 Lima, Perú | 📞 900-836-839 | ✉ contacto@UCB360.com</p>
+        <p>
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">WhatsApp</a>
+        </p>
+        <p>© 2025 ONG Sin Límites 360 - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  header {
+    background-color: #4DB8FF; /* Celeste */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #002B5B;
+  }
+  
+  .auth-buttons button {
+    background-color: white;
+    color: #0077CC;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #e6f3ff;
+  }
+  
+  section {
+    padding: 100px 60px;
+    text-align: center;
+  }
+  
+  #hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 20px;
+    max-width: 600px;
+  }
+  
